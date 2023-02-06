@@ -1,0 +1,248 @@
+/*******************************
+------------- CSS HELP / Carto Horaires
+********************************/
+
+/*  Import du style du site internet  */
+@import url("./main.css");
+
+/** Import des fonts **/
+/* OLD */
+@font-face {
+  font-family: 'VistaSansOT_black';
+  src: url('../fonts/VistaSansOT-Black.woff');
+}
+@font-face {
+  font-family: 'VistaSansOT_bold';
+  src: url('../fonts/VistaSansOT-Bold.woff');
+}
+@font-face {
+  font-family: 'VistaSansOT_regular';
+  src: url('../fonts/VistaSansOT-Reg.woff');
+}
+
+/* NEW */
+@font-face {
+  font-family: 'DMSans_bold';
+  src: url('../fonts/DMsans/DMSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'DMSans_regular';
+  src: url('../fonts/DMsans/DMSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'condate_medium';
+  src: url('../fonts/CONDATE/Condate-Light.woff2')format('woff2');
+}
+
+
+/** Déclaration des propriétés de styles sous forme de variables **/
+/* Fonts */
+:root {
+--font_regular: 'DMSans_regular', Arial, sans-serif;
+--font_bold: 'DMSans_bold', Arial, sans-serif;
+--font_title: 'condate_medium', Arial, sans-serif;
+}
+
+/* Colors */
+:root {
+--bleu: #36334F;
+--noir: #000000;
+--gris: #808080;
+/*--gris_clair: #e6e6e6;*/
+--gris_clair: #EAEDED;
+--icones_dynq: #198391;  /*old :#4c80d4;*/
+--icones_statq: #bb3da2;  /*old :#EA8A95;*/
+--icones_diff: #f78b12;
+}
+
+
+/** Version mobile **/
+
+@media (max-width: 480px) {
+	#barre_menu .tab-content>.active {
+		padding: 30px 40px!important;
+	}
+}
+
+/** Surcharge main.css **/
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+    font-family: var(--font_regular);
+    color: var(--bleu);
+    }
+    
+footer {
+    font-family: var(--font_regular);
+    color: var(--bleu);
+    }
+
+a:hover {
+    color: var(--gris)!important;
+}
+
+h2 {
+    font-size: 1.50em;
+    font-variant: small-caps;
+    text-align: center;
+    font-family: var(--font_title)!important;
+}
+    
+h3 {
+    font-size: 1.15em;
+}
+
+header > p {
+    font-size: 1.15em;
+}
+
+.icon.sigplans {
+    color: var(--icones_statq);
+}
+
+.icon.sigcartesdyn {
+    color: var(--icones_dynq);
+}
+
+.icon.sigdiff {
+    color: var(--icones_diff);
+}
+
+.wrapper {
+    box-shadow: none;
+}
+
+.box {
+    height: 100%;
+}
+
+section, article {
+    margin-bottom:0;
+}
+    
+
+/** MENU **/
+
+#barre_menu {
+  margin-bottom: 15px;
+}
+
+#barre_menu .nav-tabs{
+  border-bottom: 0px solid var(--bleu);
+}
+
+#barre_menu .nav-tabs>li>a{
+  border-radius: 0px 0px 0 0px!important;
+  color: #777;
+}
+
+#barre_menu .nav-tabs>li.active>a{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: var(--bleu)!important;
+  border-bottom: 2px solid var(--bleu)!important;
+  text-decoration: none;
+}
+
+/** Titre **/
+.title-welcome{
+  padding-bottom: 10px;
+  font-family: var(--font_bold);
+  font-size: 28px;
+  text-align: center;
+  color: var(--bleu);
+  margin-top: 0;
+}
+
+#barre_menu .tab-pane h4{
+  font-family: var(--font_bold);
+    font-size: 18px;
+}
+
+#barre_menu .tab-pane p{
+    color: #777;
+    font-size: 14px;
+}
+
+
+#barre_menu .tab-content>.active{
+    padding: 30px 100px 0 100px;
+}    
+
+
+
+  /** Barre de navigation **/
+
+  #barre_menu .nav-tabs > li {
+  float:none;
+  display:inline-block;
+  zoom:1;
+  }
+
+  #barre_menu .nav-tabs {
+  text-align:center;
+  }
+
+  #barre_menu .nav-tabs {
+    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+  #barre_menu .nav-tabs>li.active>a {
+    border-bottom: 2px solid var(--bleu)!important;
+    text-decoration: none;
+  }
+
+  #barre_menu .nav-tabs>li>a {
+    color: var(--gris);
+    font-size: 18px;
+    font-family: var(--font_bold);
+    text-transform: uppercase;
+  }
+
+/* contact */
+
+#contact {
+    text-align: left!important;
+}
+#contact div{
+    color: var(--gris_clair)!important;
+    font-size: 0.9em;
+}
+#contact footer li{
+    font-size: 0.9em;
+    color: var(--gris)!important;
+}
+
+#contact span.servicename{
+    color: inherit;
+    font-size: 1.5em;
+    font-family: var(--font_bold);
+    font-variant: small-caps;
+}
+
+/* Survol */
+
+  #barre_menu .nav-tabs>li>a:hover {
+    //background-color: #ffffff!important;
+    border-color: #ffffff!important;
+    border-bottom: 2px solid var(--bleu)!important;
+  }
+
+
+/** Cartes dynamiques **/
+    #section_1 ol li {
+        list-style-type: none;
+    }
+
+/** Plans prets a l'emploi **/

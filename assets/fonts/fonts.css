@@ -1,0 +1,77 @@
+@font-face{
+    font-family:"Vista";
+    font-weight:100;
+    font-style:normal;
+    font-display:fallback;
+    src:url("VistaSansOT-Light.woff") format("woff"),url("VistaSansOT-Light.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:100;
+    font-style:italic;
+    font-display:fallback;
+    src:url("VistaSansOT-LightItalic.woff") format("woff"),url("VistaSansOT-LightItalic.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:300;
+    font-style:normal;
+    font-display:fallback;
+    src:url("VistaSansOT-Book.woff") format("woff"),url("VistaSansOT-Book.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:300;
+    font-style:italic;
+    font-display:fallback;
+    src:url("VistaSansOT-BookItalic.woff") format("woff"),url("VistaSansOT-BookItalic.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:regular;
+    font-style:normal;
+    font-display:fallback;
+    src:url("VistaSansOT-Reg.woff") format("woff"),url("VistaSansOT-Reg.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:regular;
+    font-style:italic;
+    font-display:fallback;
+    src:url("VistaSansOT-RegItalic.woff") format("woff"),url("VistaSansOT-RegItalic.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:bold;
+    font-style:normal;
+    font-display:fallback;
+    src:url("VistaSansOT-Medium.woff") format("woff"),url("VistaSansOT-Medium.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:bold;
+    font-style:italic;
+    font-display:fallback;
+    src:url("VistaSansOT-MediumItalic.woff") format("woff"),url("VistaSansOT-MediumItalic.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:900;
+    font-style:normal;
+    font-display:fallback;
+    src:url("VistaSansOT-Bold.woff") format("woff"),url("VistaSansOT-Bold.woff2") format("woff2");
+}
+@font-face{
+    font-family:"Vista";
+    font-weight:900;
+    font-style:italic;
+    font-display:fallback;
+    src:url("VistaSansOT-BoldItalic.woff") format("woff"),url("VistaSansOT-BoldItalic.woff2") format("woff2");
+}
+@font-face{
+    font-family:"icomoon";
+    font-weight:normal;
+    font-style:normal;
+    font-display:block;
+    src:url("icomoon.woff") format("woff");
+}
