@@ -1,0 +1,2 @@
+Déposer dans ce dossier les fichiers PDF des plans de ville et de quartiers.
+Il n'est pas possible de les déployer sur github à cause de la taille de certains fichiers.
