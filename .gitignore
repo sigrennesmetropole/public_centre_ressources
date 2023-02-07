@@ -1,0 +1,6 @@
+#Ignore le fichier de stats
+./stats.csv
+
+#Ignore les plans PDF qui sont mis à jour par un autre process
+/cartes/*
+
