@@ -1,6 +1,8 @@
 #Ignore le fichier de stats
-./stats.csv
+/stats.csv
 
 #Ignore les plans PDF qui sont mis à jour par un autre process
 /cartes/*
 
+#Ignore le script de mise à jour
+maj_appli.sh
