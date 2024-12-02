@@ -13,7 +13,7 @@ for (var i=0;i<pages.length;i++){
     addHTMLFileContent(pages[i]);
 }
 */
-loadTabs().then(() => addHTMLFileContent(footer));
+loadTabs().then(() => setTimeout(addHTMLFileContent(footer),100));
 
 function loadTabs() {
   return new Promise(function(resolve, reject) {
