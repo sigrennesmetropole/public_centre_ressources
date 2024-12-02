@@ -5,9 +5,24 @@
 */
 
 /*Chargement de chacune des sous-pages */
-var pages = ['tab_plans.html','tab_c_interactives.html','tab_donnees_geo.html','contact.html'];
+var pages_tab = ['tab_plans.html','tab_c_interactives.html','tab_donnees_geo.html'];
+var  footer = 'contact.html';
+
+/*
 for (var i=0;i<pages.length;i++){
     addHTMLFileContent(pages[i]);
+}
+*/
+loadTabs().then(() => addHTMLFileContent(footer));
+
+function loadTabs() {
+  return new Promise(function(resolve, reject) {
+    
+    for (var i=0;i<pages_tab.length;i++){
+        addHTMLFileContent(pages_tab[i]);
+    }
+    resolve("ok");
+  });
 }
 
 (function($) {
@@ -47,7 +62,7 @@ for (var i=0;i<pages.length;i++){
 })(jQuery);
 
 function addHTMLFileContent(url){
-    console.log("AJOUT DE LA PAGE " + url);
+    //console.log("AJOUT DE LA PAGE " + url);
     fetch(url)
         .then(response=> response.text())
         .then(text=> {

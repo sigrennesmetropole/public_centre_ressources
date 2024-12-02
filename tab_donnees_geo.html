@@ -3,7 +3,7 @@
   <article id="work" class="wrapper style1">
     <div class="container">
         <header>
-            <p>Les données géographiques de Rennes Métropole sont disponibles sur un serveur de diffusion spécialisé. Le site de l'Open Data de Rennes Métropole reprend ces données.</p>
+            <p>Les données géographiques de Rennes Métropole sont disponibles sur un serveur de diffusion spécialisé. Le site de l'Open Data de Rennes Métropole diffuse ces données parmi les autres jeux de données.</p>
         </header>
         <div class="row aln-center">
             <div class="col-4 col-6-medium col-12-small">
@@ -20,9 +20,81 @@
                     
                 </section>
             </div>
-            
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="box style2">
+                    <a href="https://public.sig.rennesmetropole.fr/" target="_blank"><span class="icon featured sigdiff fas fa-toolbox"></span></a>
+                    <h3><a href="#diff_apis">APIs de consultation de données spécifiques</a></h3>
+                </section>
+            </div>
         </div>
     </div>
   </article>
+  
+  <article id="diff_apis" class="wrapper style1">
+        <div class="container">
+            <header>
+                <h2>APIs de consultation de données spécifiques</h2>
+            </header>
+            
+            <div class="row aln-center">
+                <div class="col-10 col-6-medium col-12-small">
+                    <section class="box style1">
+                        <span class="icon featured sigdiff fas fa-toolbox"></span>
+                        
+                        <span class="apis-content" >
+                        <h3>Données Géographiques</h3>
+                        <p>Merci de vous reporter à <a href="https://geonetwork-opensource.org/manuals/trunk/fr/api/" target="_blank">la documentation de GeoNetwork</a> pour connaître les différentes API disponibles.
+                            <ol>
+                                <li>OGC <a href="https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetCapabilities" target="_blank">CSW 2.0.2</a></li>
+                                <li><a href="https://public.sig.rennesmetropole.fr/geonetwork/doc/api/" target="_blank">REST API GeoNetwork</a></li>
+                                <li><a href="https://public.sig.rennesmetropole.fr/geonetwork/srv/eng/portal.opensearch" target="_blank">API OpenSearch</a></li>
+                                <li><a href="https://public.sig.rennesmetropole.fr/geonetwork/srv/eng/q" target="_blank">API Q Search</a></li>
+                                <li><a href="https://public.sig.rennesmetropole.fr/geonetwork/srv/eng/rdf.search" target="_blank">RDF DCAT end point</a></li>
+                            </ol>
+                        </p>
+                        
+                        <h3>API RVA</h3>
+                        <p>
+                            L'API RVA permet d'utiliser notre Référentiel Voies et Adresses de manière optimisé.<br/> 
+                            <span style="font-size:smaller">Voir <a href="https://api-rva.sig.rennesmetropole.fr" target="_blank">la documentation</a></span>
+                        </p>
+                        
+                        <h3>API Sites et Organismes</h3>
+                        <p>
+                        L'API Sites et Organismes permet la consultation de la base de données de référence sur les sites et les organismes sur le territoire du Pays de Rennes.<br/> 
+                        <span style="font-size:smaller">Voir <a href="https://api-rva.sig.rennesmetropole.fr/" target="_blank">la documentation</a></span>
+                        </p>
+                        
+                        <h3>API Cadastre</h3>
+                        <p>
+                        L'API Cadastre permet des opérations de recherche simple sur les données du plan cadastral.<br/> 
+                        <span style="font-size:smaller">Voir <a href="https://api-cadastre.sig.rennesmetropole.fr/v1/doc" target="_blank">la documentation</a></span>
+                        </p>
+                        
+                        <h3>API Urbanisme</h3>
+                        <p>
+                        L'API Urbanisme permet l'exploitation des données d'urbanisme, notamment les règlements applicable à la parcelle cadastrale.<br/> 
+                        <span style="font-size:smaller">Voir <a href="https://api-urba.sig.rennesmetropole.fr/v1/doc" target="_blank">la documentation</a></span>
+                        </p>
+                        
+                        <h3>API Secteur</h3>
+                        <p>
+                        L'API Secteur diffuse des données sectorisées calculées en fonction d'une adresse.<br/> 
+                        <span style="font-size:smaller">Voir <a href="https://api-secteur.sig.rennesmetropole.fr/v1/doc" target="_blank">la documentation</a></span>
+                        </p>
+                        
+                        <h3>API 3D</h3>
+                        <p>
+                        L'API-3D permet d'accéder aux données 3D de Rennes Métropole, par flux normés ou par téléchargement de fichiers.<br/> 
+                        <span style="font-size:smaller">Voir <a href="https://api-3d.sig.rennesmetropole.fr/" target="_blank">la documentation</a></span>
+                        </p>
+                        
+                        </span>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </article>
 </div>
 <!--/.Section 3-->
